@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="sample.css">
+    <title>Document</title>
+</head>
+<body> 
+    <h1>Model</h1>
+    <div class="karartma"></div> 
+    <div class="model">
+        <h2>Model</h2>
+        <p>
+            Lorem Ipsum pasajlarının birçok çeşitlemesi vardır.
+             Ancak bunların büyük bir çoğunluğu mizah katılarak
+              veya rastgele sözcükler eklenerek değiştirilmişlerdir. 
+              Eğer bir Lorem Ipsum pasajı kullanacaksanız, 
+              metin aralarına utandırıcı sözcükler gizlenmediğinden 
+              emin olmanız gerekir. İnternet'teki tüm Lorem Ipsum 
+              üreteçleri önceden belirlenmiş metin bloklarını yineler. 
+              Bu da, bu üreteci İnternet üzerindeki gerçek Lorem Ipsum 
+              üreteci yapar. Bu üreteç, 200'den fazla Latince sözcük ve 
+              onlara ait cümle yapılarını içeren bir sözlük kullanır. 
+              Bu nedenle, üretilen Lorem Ipsum metinleri yinelemelerden, 
+              mizahtan ve karakteristik olmayan sözcüklerden uzaktır.
+        </p>
+        <button class="close">Close</button>
+    </div> 
+    <button class="open">Open</button>  
+
+<script type="text/javascript">
+    $(".open").on("click",function(){
+        $(".karartma, .model").addClass("active");
+    });
+    $(".close").on("click",function(){
+        $(".karartma, .model").removeClass("active");
+    });
+    $("docement".keyup(function(e){
+        if(e.keyCode == 27){
+            $(".karartma, .model").removeClass("active"); 
+        }
+    }));
+
+</script>  
+</body>
+</html>
