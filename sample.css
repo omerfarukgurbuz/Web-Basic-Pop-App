@@ -2,4 +2,27 @@ body{
     background: #373B44;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    line-height: 1.5;
+    text-align: center;
+}
+html{
+    min-height: 100%;
+}
+h1{
+    font-weight: 200;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+button{
+    display: inline-black;
+    background-color: rgba(0, 0,0,0.3);
+    border: 1px solid transparent;
+    color:white;  
+    text-decoration: nono;  /*Metnin altini ustunu sagini solunu cizmek icin kullanilir*/
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border-radius: 45px;    /*Kenar kivrimi*/
+    vertical-align: middle;  /*Dikey ortalama*/
+    cursor: pointer;
 }
