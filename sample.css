@@ -41,7 +41,7 @@ button.close{
 .close:hover, .open:hover{
     border: 1px solid white;
     color: white;
-    background: transparent;
+    background: black;
 }
 
 .karartma{
@@ -64,4 +64,17 @@ button.close{
     top: 50%;
     left: 50%;
     max-width: 450px;
+    color: #4a5664;
+    background: #F8F8F8;
+    visibility: hidden; 
+    opacity: 1;
+    transition: .5s ease;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+
+}
+
+.active{
+    visibility: visible;
+    opacity: 1;
 }

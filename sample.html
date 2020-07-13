@@ -34,14 +34,14 @@
     $(".open").on("click",function(){
         $(".karartma, .model").addClass("active");
     });
-    $(".close").on("click",function(){
+    $(".close , .model").on("click",function(){
         $(".karartma, .model").removeClass("active");
     });
-    $("docement".keyup(function(e){
+    $(document).keyup(function(e){
         if(e.keyCode === 27){
             $(".karartma, .model").removeClass("active"); 
         }
-    }));
+    });
 
 </script>  
 </body>
