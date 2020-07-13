@@ -11,7 +11,7 @@
     <h1>Model</h1>
     <div class="karartma"></div> 
     <div class="model">
-        <h2>Model</h2>
+         <h2>Model</h2>
         <p>
             Lorem Ipsum pasajlarının birçok çeşitlemesi vardır.
              Ancak bunların büyük bir çoğunluğu mizah katılarak
@@ -30,7 +30,7 @@
     </div> 
     <button class="open">Open</button>  
 
-<script type="text/javascript">
+<script type="text/javascript"> //butona class ekleme ozelligi getirildi
     $(".open").on("click",function(){
         $(".karartma, .model").addClass("active");
     });
@@ -38,7 +38,7 @@
         $(".karartma, .model").removeClass("active");
     });
     $("docement".keyup(function(e){
-        if(e.keyCode == 27){
+        if(e.keyCode === 27){
             $(".karartma, .model").removeClass("active"); 
         }
     }));
